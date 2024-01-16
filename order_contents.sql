@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS order_contents (
+    content_id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    order_id INT(10) UNSIGNED NOT NULL,
+    item_id INT(10) UNSIGNED NOT NULL,
+    quantity INT(10) UNSIGNED NOT NULL DEFAULT '1',
+    price DECIMAL(8,2) UNSIGNED NOT NULL,
+    PRIMARY KEY (content_id)
+);
