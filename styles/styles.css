@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+
+h6 {
+    color: #9c9c9c;
+}
+
+a:hover {
+    color: #00AFB9;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    font-size: 16px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    font-weight: 600;
+    color: #1e1e1e;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #00AFB9;
+}
+
+.navbar i {
+    font-size: 1.7rem;
+    padding: 0 35px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar i:hover {
+    color: #00AFB9;
+}
+
+/* Responsive Navigation Bar */
+
+#bars {
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #1e1e1e;
+}
+
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-toggler:focus {
+    border:none;
+    outline: none;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    /* Remove hover effect from links */
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #1e1e1e;
+        }
+    
+    body>nav>div>button:focus {
+        background-color: #00AFB9;
+        outline: none;
+        color: #FFF;
+    }
+
+        body>nav>div>button:focus #bars {
+            color: #FFF; 
+        }
+    
+    #navbarSupportedContent > ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    
+
+        #navbarSupportedContent>ul> li:nth-child(n)> a {
+            padding: 10px 0;
+        }
+        
+        #navbarSupportedContent>ul>li:nth-child(n)>i {
+            padding: 10px 0;
+        }
+
+                /* Remove hover effect in responsive view*/
+                #navbarSupportedContent>ul>li:nth-child(n)>i:hover {
+                    color: #1e1e1e;
+                }
+}
+
+/* Home */
+.section {
+    background-color: #F3EFF5;
+}
+
